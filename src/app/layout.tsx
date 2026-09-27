@@ -14,12 +14,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        {/* Force Vercel edge to serve the SVG & PNG with cache buster */}
-        <link rel="icon" href="/logo.svg?v=4" type="image/svg+xml" />
-        <link rel="alternate icon" href="/logo.png?v=4" type="image/png" />
-        <link rel="apple-touch-icon" href="/logo.png?v=4" />
-      </head>
       <body className="antialiased text-slate-800 bg-white">
         <Navbar />
         {children}
