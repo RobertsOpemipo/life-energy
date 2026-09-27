@@ -1,18 +1,14 @@
 'use client';
 
-import { 
-  PhoneCall, 
-  ArrowRight, 
-  Mail, 
-  MapPin 
-} from 'lucide-react';
+import { PhoneCall, ArrowRight, Mail, MapPin } from 'lucide-react';
+import BrandLogo from '@/components/BrandLogo';
 
 export default function FooterSection() {
   return (
-    <footer className="w-full bg-[#d5f5e3]/60 pt-16 pb-10 px-6 sm:px-12 border-t border-emerald-100">
+    <footer className="w-full bg-[#d5f5e3]/60 pt-16 pb-10 px-4 sm:px-8 lg:px-12 border-t border-emerald-100">
       <div className="max-w-6xl mx-auto space-y-16">
         
-        {/* ================= 1. FLOATING CTA BANNER ================= */}
+        {/* ================= 1. FLOATING CTA CALLOUT BANNER ================= */}
         <div className="w-full bg-[#1b8156] rounded-2xl p-6 sm:px-10 sm:py-7 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl shadow-emerald-950/10">
           <h3 className="text-xl sm:text-2xl font-extrabold text-white text-center md:text-left tracking-tight">
             Let&apos;s talk about next solar challenge
@@ -39,7 +35,7 @@ export default function FooterSection() {
           {/* Col 1: Brand & Newsletter */}
           <div className="lg:col-span-4 space-y-5">
             <div className="flex items-center gap-2.5">
-              <span className="w-7 h-7 rounded-full bg-gradient-to-tr from-emerald-500 via-teal-400 to-orange-400 inline-block shadow-sm" />
+              <BrandLogo size="lg" />
               <span className="font-extrabold text-2xl tracking-tight text-slate-900">LifeEnergy</span>
             </div>
 
@@ -111,7 +107,7 @@ export default function FooterSection() {
 
         </div>
 
-        {/* ================= 3. BOTTOM COPYRIGHT & EXACT SOCIAL TILES ================= */}
+        {/* ================= 3. BOTTOM COPYRIGHT & SOCIAL TILES ================= */}
         <div className="pt-8 border-t border-slate-300/60 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-600">
           <p>
             Copyright© 2024 <span className="font-bold text-[#1b8156]">Solub.</span> All Rights Reserved

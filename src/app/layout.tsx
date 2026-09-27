@@ -3,10 +3,17 @@ import './globals.css';
 import Navbar from '@/components/Navbar';
 
 export const metadata: Metadata = {
-  title: 'LifeEnergy — Installation And Maintenance Of Solar Panels',
-  description: 'Clean and renewable power installation systems.',
+  title: 'LifeEnergy',
+  description: 'Installation and maintenance of solar panels',
   icons: {
-    icon: 'https://images.unsplash.com/photo-1509391365360-2e959784a276?w=64&h=64&fit=crop',
+    icon: [
+      {
+        url: '/logo.svg?v=3',
+        type: 'image/svg+xml',
+      },
+    ],
+    shortcut: '/logo.svg?v=3',
+    apple: '/logo.svg?v=3',
   },
 };
 
