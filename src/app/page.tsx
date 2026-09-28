@@ -69,26 +69,26 @@ export default function LandingPage() {
 
   return (
     <div className="w-full bg-white">
-      {/* 1. Hero Section */}
-      <section className="relative min-h-[calc(100vh-65px)] overflow-hidden bg-gradient-to-b from-[#6ee7b7] via-[#a7f3d0] to-[#ecfdf5] flex flex-col justify-between py-6 sm:py-8 lg:py-10">
+      {/* 1. Hero Section - Tightened for Mobile & Tablet */}
+      <section className="relative overflow-hidden bg-gradient-to-b from-[#6ee7b7] via-[#a7f3d0] to-[#ecfdf5] pt-5 pb-8 sm:pt-6 sm:pb-10 lg:py-10 flex flex-col justify-start gap-4 sm:gap-6 lg:gap-8">
         
         {/* Upper Content Header Bar */}
         <div
           ref={contentRef}
-          className="max-w-7xl mx-auto w-full px-4 sm:px-8 lg:px-12 flex flex-col md:flex-row md:items-center justify-between gap-6 relative z-20 mb-6 sm:mb-8"
+          className="max-w-7xl mx-auto w-full px-4 sm:px-8 lg:px-12 flex flex-col md:flex-row md:items-center justify-between gap-4 md:gap-6 relative z-20"
         >
           {/* Left Heading */}
           <div className="landing-element max-w-2xl">
-            <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.2] md:leading-[1.15]">
               Installation And Maintenance <br className="hidden sm:inline" />
               Of Solar Panels
             </h1>
           </div>
 
           {/* Right Happy Clients Badge */}
-          <div className="landing-element flex items-center gap-3 self-start md:self-auto bg-white/50 backdrop-blur-md px-3.5 sm:px-4 py-2 rounded-full border border-white/60 shadow-sm shrink-0">
+          <div className="landing-element flex items-center gap-2.5 sm:gap-3 self-start md:self-auto bg-white/60 backdrop-blur-md px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border border-white/70 shadow-sm shrink-0">
             <div className="flex -space-x-2">
-              <div className="relative w-7 h-7 sm:w-8 sm:h-8 rounded-full ring-2 ring-white overflow-hidden bg-slate-200">
+              <div className="relative w-6 h-6 sm:w-8 sm:h-8 rounded-full ring-2 ring-white overflow-hidden bg-slate-200">
                 <Image
                   src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150"
                   alt="Client"
@@ -96,7 +96,7 @@ export default function LandingPage() {
                   className="object-cover"
                 />
               </div>
-              <div className="relative w-7 h-7 sm:w-8 sm:h-8 rounded-full ring-2 ring-white overflow-hidden bg-slate-200">
+              <div className="relative w-6 h-6 sm:w-8 sm:h-8 rounded-full ring-2 ring-white overflow-hidden bg-slate-200">
                 <Image
                   src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=150"
                   alt="Client"
@@ -104,7 +104,7 @@ export default function LandingPage() {
                   className="object-cover"
                 />
               </div>
-              <div className="relative w-7 h-7 sm:w-8 sm:h-8 rounded-full ring-2 ring-white overflow-hidden bg-slate-200">
+              <div className="relative w-6 h-6 sm:w-8 sm:h-8 rounded-full ring-2 ring-white overflow-hidden bg-slate-200">
                 <Image
                   src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150"
                   alt="Client"
@@ -120,9 +120,9 @@ export default function LandingPage() {
           </div>
         </div>
 
-        {/* Main Solar Panels Perspective Card */}
-        <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 flex-1 flex flex-col justify-end">
-          <div className="relative w-full h-[360px] sm:h-[460px] lg:h-[540px] rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl border-2 sm:border-4 border-white/70">
+        {/* Main Solar Panels Perspective Card - Immediate tight flow */}
+        <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
+          <div className="relative w-full h-[260px] xs:h-[300px] sm:h-[380px] md:h-[440px] lg:h-[520px] rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl border-2 sm:border-4 border-white/70">
             <Image
               src="https://images.pexels.com/photos/9875414/pexels-photo-9875414.jpeg?auto=compress&cs=tinysrgb&w=1600"
               alt="Solar panels with windmills"
@@ -133,18 +133,18 @@ export default function LandingPage() {
 
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950/50 via-transparent to-transparent pointer-events-none" />
 
-            <div className="absolute inset-x-4 bottom-4 sm:bottom-8 sm:inset-x-8 flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4 z-10">
-              <button className="bg-[#ff6f00] hover:bg-[#e66300] text-white font-bold text-xs sm:text-sm md:text-base px-6 sm:px-8 py-3 sm:py-3.5 rounded-xl sm:rounded-2xl shadow-lg shadow-orange-950/30 transition-transform active:scale-95 shrink-0">
+            <div className="absolute inset-x-3 bottom-3 sm:bottom-6 sm:inset-x-6 lg:bottom-8 lg:inset-x-8 flex flex-col sm:flex-row items-start sm:items-end justify-between gap-3 sm:gap-4 z-10">
+              <button className="bg-[#ff6f00] hover:bg-[#e66300] text-white font-bold text-xs sm:text-sm md:text-base px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-xl sm:rounded-2xl shadow-lg shadow-orange-950/30 transition-transform active:scale-95 shrink-0">
                 Get Started
               </button>
 
-              <div className="flex items-center gap-3 sm:gap-4 bg-black/40 backdrop-blur-md px-3.5 sm:px-5 py-2.5 sm:py-3 rounded-xl sm:rounded-2xl border border-white/20 text-white self-stretch sm:self-auto justify-between sm:justify-start">
+              <div className="flex items-center gap-3 sm:gap-4 bg-black/40 backdrop-blur-md px-3 sm:px-5 py-2 sm:py-3 rounded-xl sm:rounded-2xl border border-white/20 text-white self-stretch sm:self-auto justify-between sm:justify-start">
                 <div className="text-left sm:text-right">
-                  <p className="text-[11px] sm:text-xs md:text-sm font-semibold leading-tight">Solar drives in the</p>
-                  <p className="text-[11px] sm:text-xs md:text-sm font-semibold leading-tight">whole country</p>
+                  <p className="text-[10px] sm:text-xs md:text-sm font-semibold leading-tight">Solar drives in the</p>
+                  <p className="text-[10px] sm:text-xs md:text-sm font-semibold leading-tight">whole country</p>
                 </div>
 
-                <div className="relative w-11 h-11 sm:w-14 sm:h-14 flex items-center justify-center shrink-0">
+                <div className="relative w-9 h-9 sm:w-12 sm:h-12 md:w-14 md:h-14 flex items-center justify-center shrink-0">
                   <svg className="w-full h-full transform -rotate-90" viewBox="0 0 36 36">
                     <path
                       className="text-white/20"
@@ -163,7 +163,7 @@ export default function LandingPage() {
                       d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
                     />
                   </svg>
-                  <span className="absolute text-[9px] sm:text-[11px] font-bold text-white tracking-tighter">
+                  <span className="absolute text-[8.5px] sm:text-[10px] md:text-[11px] font-bold text-white tracking-tighter">
                     170k+
                   </span>
                 </div>
